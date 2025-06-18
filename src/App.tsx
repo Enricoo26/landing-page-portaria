@@ -26,7 +26,9 @@ function App() {
           <div className="relative flex items-center justify-between py-4">
             <div className="flex items-center space-x-2">
               {/* <Shield className="h-8 w-8 text-stone-700" /> */}
-              <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+              <a href="#hero">
+                <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+              </a>
               {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
             <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
@@ -40,7 +42,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
+      <section id="hero" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
@@ -275,7 +277,7 @@ function App() {
               <h3 className="font-semibold mb-2">Ligue para nós</h3>
               <p className="text-stone-300">0800 033 3395</p>
               <p className="text-stone-300">(11) 3033-9313</p>
-              <p className="text-stone-300">WhatsApp: (11) 99240-9113</p>
+              <p className="text-stone-300">WhatsApp: (11) 94227-7979</p>
               <p className="text-stone-400 text-sm">Atendimento 24h</p>
             </div>
 
@@ -309,11 +311,15 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <Shield className="h-6 w-6" />
-              <span className="text-xl font-bold">Concierge Pro</span>
+              <Shield className="h-6 w-6 text-white" />
+              <span className="text-xl font-bold">Atende Portaria</span>
             </div>
-            <div className="text-sm">
-              © 2025 Concierge Pro. All rights reserved. | Privacy Policy | Terms of Service
+            <div className="text-sm text-center md:text-right space-x-2">
+              <span>© {new Date().getFullYear()} Atende Portaria. Todos os direitos reservados.</span>
+              <span className="hidden sm:inline">|</span>
+              <a href="#" className="underline hover:text-white">Política de Privacidade</a>
+              <span className="hidden sm:inline">|</span>
+              <a href="#" className="underline hover:text-white">Termos de Uso</a>
             </div>
           </div>
         </div>
