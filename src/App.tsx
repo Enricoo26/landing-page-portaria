@@ -262,44 +262,47 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Ready to Reclaim Your Time?
+              Pronto para modernizar sua portaria?
             </h2>
             <p className="text-xl text-stone-300">
-              Start your journey to a more organized, stress-free lifestyle today.
+              Fale com nossa equipe e descubra como reduzir custos e aumentar a segurança do seu condomínio.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <Phone className="h-8 w-8 mx-auto mb-4 text-stone-300" />
-              <h3 className="font-semibold mb-2">Call Us</h3>
-              <p className="text-stone-300">+1 (555) 123-4567</p>
-              <p className="text-stone-400 text-sm">Available 24/7</p>
+              <h3 className="font-semibold mb-2">Ligue para nós</h3>
+              <p className="text-stone-300">0800 033 3395</p>
+              <p className="text-stone-300">(11) 3033-9313</p>
+              <p className="text-stone-300">WhatsApp: (11) 99240-9113</p>
+              <p className="text-stone-400 text-sm">Atendimento 24h</p>
             </div>
-            
+
             <div className="text-center">
               <Mail className="h-8 w-8 mx-auto mb-4 text-stone-300" />
-              <h3 className="font-semibold mb-2">Email Us</h3>
-              <p className="text-stone-300">hello@conciergepro.com</p>
-              <p className="text-stone-400 text-sm">Response within 2 hours</p>
+              <h3 className="font-semibold mb-2">Envie um e-mail</h3>
+              <p className="text-stone-300">contato@atendeportaria.com.br</p>
+              <p className="text-stone-400 text-sm">Retorno em até 1 dia útil</p>
             </div>
-            
+
             <div className="text-center">
               <MapPin className="h-8 w-8 mx-auto mb-4 text-stone-300" />
-              <h3 className="font-semibold mb-2">Service Areas</h3>
-              <p className="text-stone-300">Nationwide Coverage</p>
-              <p className="text-stone-400 text-sm">US & Canada</p>
+              <h3 className="font-semibold mb-2">Cobertura</h3>
+              <p className="text-stone-300">Atendimento em todo o Brasil</p>
+              <p className="text-stone-400 text-sm">Centrais operacionais e franquias em expansão</p>
             </div>
           </div>
-          
+
           <div className="text-center">
             <button className="bg-white text-stone-900 px-8 py-4 rounded-lg font-semibold hover:bg-stone-100 transition-colors duration-200 inline-flex items-center group">
-              Start Your Free Trial Today
+              Solicite uma demonstração
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
             </button>
           </div>
         </div>
       </section>
+
 
       {/* Footer */}
       <footer className="bg-stone-950 text-stone-300 py-12">
