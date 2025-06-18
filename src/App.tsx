@@ -40,7 +40,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-amber-50 py-20 lg:py-32">
+      <section className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
@@ -89,61 +89,62 @@ function App() {
           </div>
         </div>
       </section>
-      
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              Comprehensive Concierge Services
-            </h2>
-            <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-              From everyday errands to special occasions, our experienced team handles it all with discretion and professionalism.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                icon: <Calendar className="h-8 w-8" />,
-                title: "Schedule Management",
-                description: "Appointment booking, calendar coordination, and event planning with seamless integration."
-              },
-              {
-                icon: <Car className="h-8 w-8" />,
-                title: "Travel Arrangements",
-                description: "Flight bookings, hotel reservations, transportation, and complete itinerary management."
-              },
-              {
-                icon: <Utensils className="h-8 w-8" />,
-                title: "Dining & Entertainment",
-                description: "Restaurant reservations, event tickets, and exclusive access to premium venues."
-              },
-              {
-                icon: <Gift className="h-8 w-8" />,
-                title: "Personal Shopping",
-                description: "Gift selection, wardrobe consulting, and delivery coordination for all occasions."
-              },
-              {
-                icon: <Home className="h-8 w-8" />,
-                title: "Home Services",
-                description: "Maintenance coordination, cleaning services, and property management support."
-              },
-              {
-                icon: <Briefcase className="h-8 w-8" />,
-                title: "Business Support",
-                description: "Research, administrative tasks, and professional service coordination."
-              }
-            ].map((service, index) => (
-              <div key={index} className="bg-stone-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 border border-stone-200">
-                <div className="text-stone-700 mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-stone-900 mb-3">{service.title}</h3>
-                <p className="text-stone-600 leading-relaxed">{service.description}</p>
-              </div>
-            ))}
-          </div>
+
+    {/* Services Section */}
+    <section id="services" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
+            Nossas Soluções em Portaria
+          </h2>
+          <p className="text-xl text-stone-600 max-w-3xl mx-auto">
+            Tecnologia avançada e atendimento 24h para garantir segurança, praticidade e economia para seu condomínio.
+          </p>
         </div>
-      </section>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              icon: <Clock className="h-8 w-8 text-red-500" />,
+              title: "Portaria Remota",
+              description: "Monitoramento e controle de acesso 24h via central inteligente, sem necessidade de porteiros físicos."
+            },
+            {
+              icon: <Users className="h-8 w-8 text-red-500" />,
+              title: "Reconhecimento Facial",
+              description: "Entrada rápida e segura com tecnologia biométrica integrada para moradores e visitantes autorizados."
+            },
+            {
+              icon: <Shield className="h-8 w-8 text-red-500" />,
+              title: "Portaria Monitorada",
+              description: "Segurança reforçada com equipe de vigilância e controle remoto para eventos e situações especiais."
+            },
+            {
+              icon: <Phone className="h-8 w-8 text-red-500" />,
+              title: "Aplicativo Mobile",
+              description: "Acesso e notificações na palma da mão para moradores, síndicos e administradores do condomínio."
+            },
+            {
+              icon: <Gift className="h-8 w-8 text-red-500" />,
+              title: "Armários Inteligentes",
+              description: "Entrega segura de encomendas com armários automatizados para maior comodidade e controle."
+            },
+            {
+              icon: <Home className="h-8 w-8 text-red-500" />,
+              title: "Soluções Personalizadas",
+              description: "Sistemas específicos para condomínios horizontais, comerciais e áreas comuns integradas."
+            }
+          ].map((service, index) => (
+            <div key={index} className="bg-stone-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 border border-stone-200">
+              <div className="text-red-500 mb-4">{service.icon}</div>
+              <h3 className="text-xl font-semibold text-stone-900 mb-3">{service.title}</h3>
+              <p className="text-stone-600 leading-relaxed">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
 
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20 bg-stone-50">
@@ -229,7 +230,7 @@ function App() {
                 <div className="flex items-center mb-6">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-amber-400 fill-current" />
+                      <Star key={i} className="h-5 w-5 text-red-400 fill-current" />
                     ))}
                   </div>
                   <span className="ml-2 text-stone-600 font-medium">4.9/5 from 500+ clients</span>
