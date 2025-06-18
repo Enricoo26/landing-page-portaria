@@ -23,19 +23,18 @@ function App() {
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="relative flex items-center justify-between py-4">
             <div className="flex items-center space-x-2">
-              <Shield className="h-8 w-8 text-stone-700" />
-              <span className="text-2xl font-bold text-stone-900">Concierge Pro</span>
+              {/* <Shield className="h-8 w-8 text-stone-700" /> */}
+              <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+              {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <a href="#services" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Services</a>
-              <a href="#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">How It Works</a>
-              <a href="#contact" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Contact</a>
+            <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
+              <a href="#services" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Serviços</a>
+              <a href="#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Como Funciona</a>
+              <a href="#contact" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Contato</a>
             </nav>
-            <button className="bg-stone-900 text-white px-6 py-2 rounded-lg hover:bg-stone-800 transition-colors duration-200">
-              Get Started
-            </button>
+            <div className="w-24" /> {/* ou um botão */}
           </div>
         </div>
       </header>
@@ -53,7 +52,7 @@ function App() {
                 Delegate your daily tasks to our trusted professionals. From scheduling appointments to managing errands, 
                 we handle life's details so you can focus on what matters most.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
                   Start Your Free Trial
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -61,17 +60,17 @@ function App() {
                 <button className="border-2 border-stone-300 text-stone-700 px-8 py-4 rounded-lg font-semibold hover:border-stone-400 hover:bg-stone-100 transition-all duration-200">
                   Schedule Consultation
                 </button>
-              </div>
+              </div> */}
             </div>
             <div className="lg:pl-12">
               <div className="bg-white rounded-2xl shadow-xl p-8 border border-stone-200">
-                <div className="flex items-center mb-6">
+                {/* <div className="flex items-center mb-6">
                   <Clock className="h-8 w-8 text-stone-700 mr-3" />
                   <div>
                     <h3 className="font-semibold text-stone-900">Available 24/7</h3>
                     <p className="text-stone-600">Your concierge is always ready</p>
                   </div>
-                </div>
+                </div> */}
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
