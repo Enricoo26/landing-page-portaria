@@ -45,44 +45,43 @@ function App() {
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
               <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
-                Your Personal
-                <span className="text-stone-700 block">Remote Concierge</span>
+                Um novo jeito
+                <span className="text-stone-700 block">de fazer portaria</span>
               </h1>
               <p className="text-xl text-stone-600 mb-8 leading-relaxed">
-                Delegate your daily tasks to our trusted professionals. From scheduling appointments to managing errands, 
-                we handle life's details so you can focus on what matters most.
+                Segurança, tecnologia e agilidade para seu condomínio com portaria remota 24h, reconhecimento facial, 
+                controle inteligente de acessos e redução de custos operacionais.
               </p>
-              {/* <div className="flex flex-col sm:flex-row gap-4">
+              {/* 
+              <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
-                  Start Your Free Trial
+                  Saiba Mais
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
                 </button>
                 <button className="border-2 border-stone-300 text-stone-700 px-8 py-4 rounded-lg font-semibold hover:border-stone-400 hover:bg-stone-100 transition-all duration-200">
-                  Schedule Consultation
+                  Fale Conosco
                 </button>
-              </div> */}
+              </div> 
+              */}
             </div>
             <div className="lg:pl-12">
               <div className="bg-white rounded-2xl shadow-xl p-8 border border-stone-200">
-                {/* <div className="flex items-center mb-6">
-                  <Clock className="h-8 w-8 text-stone-700 mr-3" />
-                  <div>
-                    <h3 className="font-semibold text-stone-900">Available 24/7</h3>
-                    <p className="text-stone-600">Your concierge is always ready</p>
-                  </div>
-                </div> */}
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-stone-700">Restaurant reservations confirmed</span>
+                    <span className="text-stone-700">Monitoramento 24h e equipe pronta para atuar</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-stone-700">Travel arrangements completed</span>
+                    <span className="text-stone-700">Controle de acesso via reconhecimento facial e biometria</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
-                    <span className="text-stone-700">Personal shopping delivered</span>
+                    <span className="text-stone-700">Aplicativo intuitivo para moradores e síndicos</span>
+                  </div>
+                  <div className="flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-600 mr-3" />
+                    <span className="text-stone-700">Redução de custos com portaria física tradicional</span>
                   </div>
                 </div>
               </div>
@@ -90,7 +89,7 @@ function App() {
           </div>
         </div>
       </section>
-
+      
       {/* Services Section */}
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
