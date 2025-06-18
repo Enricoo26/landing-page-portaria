@@ -151,10 +151,10 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-              How It Works
+              Como Funciona
             </h2>
             <p className="text-xl text-stone-600">
-              Simple, secure, and personalized concierge service in three easy steps.
+              Implantação simples, controle inteligente e operação segura — tudo em poucos passos.
             </p>
           </div>
           
@@ -162,22 +162,22 @@ function App() {
             {[
               {
                 step: "01",
-                title: "Tell Us What You Need",
-                description: "Submit your request through our secure platform or dedicated phone line. Our team reviews and confirms all details."
+                title: "Instalação e Integração",
+                description: "Nossa equipe realiza a instalação dos equipamentos, câmeras e sistemas de controle de acesso com suporte técnico completo."
               },
               {
                 step: "02",
-                title: "We Handle Everything",
-                description: "Your dedicated concierge takes care of all arrangements, keeping you updated throughout the process."
+                title: "Cadastro de Usuários",
+                description: "Moradores e autorizados são cadastrados no sistema com reconhecimento facial, QR Code ou senha de acesso temporária."
               },
               {
                 step: "03",
-                title: "Enjoy Your Time",
-                description: "Receive confirmation and enjoy your perfectly arranged experience while we handle any follow-up needed."
+                title: "Operação 24h",
+                description: "A central da Atende Portaria assume o controle remoto com monitoramento contínuo e suporte imediato em tempo real."
               }
             ].map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-stone-900 text-white text-2xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="bg-red-900 text-white text-2xl font-bold w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
                   {step.step}
                 </div>
                 <h3 className="text-xl font-semibold text-stone-900 mb-4">{step.title}</h3>
@@ -187,6 +187,7 @@ function App() {
           </div>
         </div>
       </section>
+
 
       {/* Benefits Section */}
       <section className="py-20 bg-white">
