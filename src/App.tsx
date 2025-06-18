@@ -189,30 +189,30 @@ function App() {
       </section>
 
 
-      {/* Benefits Section */}
+      {/* Benefits Section */} 
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
             <div>
               <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-6">
-                Why Choose Our Concierge Service?
+                Por que escolher a Atende Portaria?
               </h2>
               <div className="space-y-6">
                 {[
                   {
-                    icon: <Clock className="h-6 w-6" />,
-                    title: "Save 10+ Hours Weekly",
-                    description: "Reclaim your valuable time for family, career, and personal interests."
+                    icon: <Shield className="h-6 w-6" />,
+                    title: "Mais segurança e controle",
+                    description: "Tecnologia de ponta com reconhecimento facial, monitoramento remoto e protocolos de emergência."
                   },
                   {
-                    icon: <Shield className="h-6 w-6" />,
-                    title: "Trusted & Secure",
-                    description: "Fully vetted professionals with comprehensive insurance and confidentiality agreements."
+                    icon: <Clock className="h-6 w-6" />,
+                    title: "Atendimento 24 horas",
+                    description: "Central própria com operadores disponíveis dia e noite, inclusive em feriados e finais de semana."
                   },
                   {
                     icon: <Users className="h-6 w-6" />,
-                    title: "Personalized Service",
-                    description: "Dedicated concierge who learns your preferences and anticipates your needs."
+                    title: "Redução de custos operacionais",
+                    description: "Economia de até 50% em comparação com portarias tradicionais, sem perder qualidade no atendimento."
                   }
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start space-x-4">
@@ -231,14 +231,14 @@ function App() {
                 <div className="flex items-center mb-6">
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-red-400 fill-current" />
+                      <Star key={i} className="h-5 w-5 text-amber-400 fill-current" />
                     ))}
                   </div>
-                  <span className="ml-2 text-stone-600 font-medium">4.9/5 from 500+ clients</span>
+                  <span className="ml-2 text-stone-600 font-medium">Satisfação 4.9/5 entre os condomínios atendidos</span>
                 </div>
                 
                 <blockquote className="text-stone-700 text-lg leading-relaxed mb-6">
-                  "Having a remote concierge has completely transformed how I manage my time. The team is incredibly professional and always goes above and beyond."
+                  "Desde que migramos para a portaria remota da Atende, tivemos mais segurança, agilidade e uma economia real nas despesas mensais do condomínio."
                 </blockquote>
                 
                 <div className="flex items-center">
@@ -246,8 +246,8 @@ function App() {
                     <Users className="h-6 w-6 text-stone-600" />
                   </div>
                   <div className="ml-4">
-                    <div className="font-semibold text-stone-900">Sarah M.</div>
-                    <div className="text-stone-600">Executive Director</div>
+                    <div className="font-semibold text-stone-900">Carlos A.</div>
+                    <div className="text-stone-600">Síndico Profissional</div>
                   </div>
                 </div>
               </div>
@@ -255,6 +255,7 @@ function App() {
           </div>
         </div>
       </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-stone-900 text-white">
