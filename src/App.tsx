@@ -27,7 +27,7 @@ function App() {
             <div className="flex items-center space-x-2">
               {/* <Shield className="h-8 w-8 text-stone-700" /> */}
               <a href="#home">
-                <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+                <img src="/images/logo.png" alt="Logo Atende Portaria" className="h-25 w-25 object-contain" />
               </a>
               {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
@@ -107,7 +107,7 @@ function App() {
               </div>
             </div>
             <div className="mb-12 lg:mb-0 flex justify-center mt-12">
-              <img src="/images/500.png" alt="" />
+              <img src="/images/500.png" alt="Mais de 500 mil usuários" />
               {/* <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
                 Um novo jeito
                 <span className="text-stone-700 block">de fazer portaria</span>
@@ -235,7 +235,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
-              <img src="/images/cortado.png" alt="" />
+              <img src="/images/mobile.png" alt="Serviço mobile e prêmios" />
               {/* 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
