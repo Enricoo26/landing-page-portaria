@@ -64,13 +64,13 @@ function App() {
         </div>
 
         {/* Imagem */}
-        <div className="w-full md:w-1/2 h-64 md:h-full relative mt-8 md:mt-0">
+        <div className="w-full md:w-1/2 relative mt-8 md:mt-0">
           <img
             src="/images/back.png"
             alt="Portaria remota"
-            className="object-cover w-full h-full"
+            className="w-full h-auto max-h-[500px] md:max-h-none object-contain md:object-cover"
           />
-          {/* Gradiente visível apenas no desktop */}
+          {/* Gradiente só no desktop */}
           <div
             className="hidden md:block absolute inset-0 pointer-events-none"
             style={{
@@ -79,8 +79,6 @@ function App() {
           />
         </div>
       </section>
-
-
 
       {/* Hero Section */}
       <section id="hero" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
