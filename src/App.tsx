@@ -27,7 +27,7 @@ function App() {
             <div className="flex items-center space-x-2">
               {/* <Shield className="h-8 w-8 text-stone-700" /> */}
               <a href="#home">
-                <img src="/src/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+                <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
               </a>
               {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
@@ -67,7 +67,7 @@ function App() {
   <div className="absolute right-0 top-0 w-full md:w-1/2 h-full">
     <div className="w-full h-full relative">
       <img
-        src="/src/images/back.png"
+        src="/images/back.png"
         alt="Portaria remota"
         className="object-cover w-full h-full"
       />
@@ -115,7 +115,7 @@ function App() {
               </div>
             </div>
             <div className="mb-12 lg:mb-0">
-              <img src="/src/images/500.png" alt="" />
+              <img src="/images/500.png" alt="" />
               {/* <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
                 Um novo jeito
                 <span className="text-stone-700 block">de fazer portaria</span>
@@ -243,7 +243,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
-              <img src="/src/images/cortado.png" alt="" />
+              <img src="/images/cortado.png" alt="" />
               {/* 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
