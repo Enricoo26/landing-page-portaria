@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://atendeportaria-itaquera.netlify.app/sitemap.xml
