@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
-      <header className="bg-neutral-200/95 backdrop-blur-sm border-b border-stone-400 sticky top-0 z-50">
+      <header className="bg-neutral-200/75 backdrop-blur-sm border-b border-stone-400 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between py-4">
             <div className="flex items-center space-x-2">
