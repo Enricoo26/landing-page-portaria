@@ -5,19 +5,19 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://atendeportaria-itaquera.netlify.app/#services</loc>
+    <loc>https://atendeportaria-itaquera.netlify.app/#servicos</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://atendeportaria-itaquera.netlify.app/#how-it-works</loc>
+    <loc>https://atendeportaria-itaquera.netlify.app/#como-funciona</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://atendeportaria-itaquera.netlify.app/#regions</loc>
+    <loc>https://atendeportaria-itaquera.netlify.app/#regioes</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://atendeportaria-itaquera.netlify.app/#contact</loc>
+    <loc>https://atendeportaria-itaquera.netlify.app/#contato</loc>
     <priority>0.7</priority>
   </url>
 </urlset>
