@@ -386,9 +386,9 @@ function App() {
             <div className="text-sm text-center md:text-right space-x-2">
               <span>© {new Date().getFullYear()} Atende Portaria. Todos os direitos reservados.</span>
               <span className="hidden sm:inline">|</span>
-              <a href="#" className="underline hover:text-white">Política de Privacidade</a>
+              <a href="/politica-de-privacidade.html" className="underline hover:text-white">Política de Privacidade</a>
               <span className="hidden sm:inline">|</span>
-              <a href="#" className="underline hover:text-white">Termos de Uso</a>
+              <a href="/termos-de-uso.html" className="underline hover:text-white">Termos de Uso</a>
             </div>
           </div>
         </div>
