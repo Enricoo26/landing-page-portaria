@@ -21,26 +21,37 @@ function App() {
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
-      <header className="bg-white/95 backdrop-blur-sm border-b border-stone-200 sticky top-0 z-50">
+      <header className="bg-neutral-200/95 backdrop-blur-sm border-b border-stone-400 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between py-4">
             <div className="flex items-center space-x-2">
-              {/* <Shield className="h-8 w-8 text-stone-700" /> */}
               <a href="#home">
                 <img src="/images/logo.png" alt="Logo Atende Portaria" className="h-25 w-25 object-contain" />
               </a>
-              {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
-            <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
-              <a href="#servicos" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Serviços</a>
-              <a href="#como-funciona" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Como Funciona</a>
-              <a href="#regioes" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Regiões</a>
-              <a href="#contato" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Contato</a>
+
+            <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-4">
+              {[
+                { href: "#servicos", label: "Serviços" },
+                { href: "#como-funciona", label: "Como Funciona" },
+                { href: "#regioes", label: "Regiões" },
+                { href: "#contato", label: "Contato" }
+              ].map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className="text-stone-700 px-3 py-2 rounded-md transition-colors duration-200 hover:bg-neutral-50 hover:text-stone-900 shadow-sm hover:shadow-md"
+                >
+                  {item.label}
+                </a>
+              ))}
             </nav>
-            <div className="w-24" /> {/* ou um botão */}
+
+            <div className="w-24" />
           </div>
         </div>
       </header>
+
       <section id="home" className="w-full flex flex-col md:flex-row items-center min-h-[70vh] bg-white relative overflow-hidden">
         {/* Texto */}
         <div className="z-10 w-full md:w-1/2 px-6 lg:px-16 py-16 text-center md:text-left">
