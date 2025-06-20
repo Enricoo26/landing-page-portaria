@@ -1,12 +1,12 @@
 import React from 'react';
-import { 
-  Clock, 
-  Shield, 
-  Users, 
-  CheckCircle, 
-  Star, 
-  Phone, 
-  Mail, 
+import {
+  Clock,
+  Shield,
+  Users,
+  CheckCircle,
+  Star,
+  Phone,
+  Mail,
   MapPin,
   Calendar,
   Briefcase,
@@ -41,50 +41,44 @@ function App() {
           </div>
         </div>
       </header>
-<section id ="home"className="w-full flex items-center min-h-[70vh] bg-white relative overflow-hidden">
-  {/* Texto à esquerda */}
-  <div className="z-10 w-full md:w-1/2 px-6 lg:px-16 py-16">
-    <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
-      Um novo jeito
-      <span className="text-stone-700 block">de fazer portaria</span>
-    </h1>
-    <p className="text-xl text-stone-600 mb-6 leading-relaxed">
-      Esqueça os altos custos da portaria tradicional. Com a portaria remota, seu condomínio economiza até 60% ao mesmo tempo em que aumenta a segurança com tecnologias como reconhecimento facial, acesso por QR Code e monitoramento inteligente 24h.
-    </p>
-    <p className="text-xl text-stone-600 mb-8 leading-relaxed">
-      Nossos sistemas identificam visitantes em tempo real, gravam todas as entradas e saídas em nuvem e ainda oferecem suporte técnico 24 horas por dia. Tudo isso sem obras complexas e com implantação rápida.
-    </p>
+      <section id="home" className="w-full flex flex-col md:flex-row items-center min-h-[70vh] bg-white relative overflow-hidden">
+        {/* Texto */}
+        <div className="z-10 w-full md:w-1/2 px-6 lg:px-16 py-16 text-center md:text-left">
+          <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
+            Um novo jeito
+            <span className="text-stone-700 block">de fazer portaria</span>
+          </h1>
+          <p className="text-xl text-stone-600 mb-6 leading-relaxed">
+            Esqueça os altos custos da portaria tradicional. Com a portaria remota, seu condomínio economiza até 60% ao mesmo tempo em que aumenta a segurança com tecnologias como reconhecimento facial, acesso por QR Code e monitoramento inteligente 24h.
+          </p>
+          <p className="text-xl text-stone-600 mb-8 leading-relaxed">
+            Nossos sistemas identificam visitantes em tempo real, gravam todas as entradas e saídas em nuvem e ainda oferecem suporte técnico 24 horas por dia. Tudo isso sem obras complexas e com implantação rápida.
+          </p>
 
-    <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0">
-      <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center">
-        Solicite um Orçamento
-        <ArrowRight className="ml-2 h-5 w-5" />
-      </button>
-    </a>
-  </div>
+          <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0" className="inline-block">
+            <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center md:justify-start">
+              Solicite um Orçamento
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </button>
+          </a>
+        </div>
 
-  {/* Imagem à direita com gradiente customizado */}
-  <div className="absolute right-0 top-0 w-full md:w-1/2 h-full">
-    <div className="w-full h-full relative">
-      <img
-        src="/images/back.png"
-        alt="Portaria remota"
-        className="object-cover w-full h-full"
-      />
-      {/* Gradiente começa mais à direita */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "linear-gradient(to right, white 0%, white 0%, transparent 10%)"
-        }}
-      />
-    </div>
-  </div>
-</section>
-
-
-
-
+        {/* Imagem */}
+        <div className="w-full md:w-1/2 h-64 md:h-full relative mt-8 md:mt-0">
+          <img
+            src="/images/back.png"
+            alt="Portaria remota"
+            className="object-cover w-full h-full"
+          />
+          {/* Gradiente visível apenas no desktop */}
+          <div
+            className="hidden md:block absolute inset-0 pointer-events-none"
+            style={{
+              background: "linear-gradient(to right, white 0%, white 0%, transparent 10%)"
+            }}
+          />
+        </div>
+      </section>
 
 
 
@@ -140,60 +134,60 @@ function App() {
         </div>
       </section>
 
-    {/* Services Section */}
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-            Nossas Soluções em Portaria
-          </h2>
-          <p className="text-xl text-stone-600 max-w-3xl mx-auto">
-            Tecnologia avançada e atendimento 24h para garantir segurança, praticidade e economia para seu condomínio.
-          </p>
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
+              Nossas Soluções em Portaria
+            </h2>
+            <p className="text-xl text-stone-600 max-w-3xl mx-auto">
+              Tecnologia avançada e atendimento 24h para garantir segurança, praticidade e economia para seu condomínio.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: <Clock className="h-8 w-8 text-red-500" />,
+                title: "Portaria Remota",
+                description: "Monitoramento e controle de acesso 24h via central inteligente, sem necessidade de porteiros físicos."
+              },
+              {
+                icon: <Users className="h-8 w-8 text-red-500" />,
+                title: "Reconhecimento Facial",
+                description: "Entrada rápida e segura com tecnologia biométrica integrada para moradores e visitantes autorizados."
+              },
+              {
+                icon: <Shield className="h-8 w-8 text-red-500" />,
+                title: "Portaria Monitorada",
+                description: "Segurança reforçada com equipe de vigilância e controle remoto para eventos e situações especiais."
+              },
+              {
+                icon: <Phone className="h-8 w-8 text-red-500" />,
+                title: "Aplicativo Mobile",
+                description: "Acesso e notificações na palma da mão para moradores, síndicos e administradores do condomínio."
+              },
+              {
+                icon: <Gift className="h-8 w-8 text-red-500" />,
+                title: "Armários Inteligentes",
+                description: "Entrega segura de encomendas com armários automatizados para maior comodidade e controle."
+              },
+              {
+                icon: <Home className="h-8 w-8 text-red-500" />,
+                title: "Soluções Personalizadas",
+                description: "Sistemas específicos para condomínios horizontais, comerciais e áreas comuns integradas."
+              }
+            ].map((service, index) => (
+              <div key={index} className="bg-stone-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 border border-stone-200">
+                <div className="text-red-500 mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-stone-900 mb-3">{service.title}</h3>
+                <p className="text-stone-600 leading-relaxed">{service.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {[
-            {
-              icon: <Clock className="h-8 w-8 text-red-500" />,
-              title: "Portaria Remota",
-              description: "Monitoramento e controle de acesso 24h via central inteligente, sem necessidade de porteiros físicos."
-            },
-            {
-              icon: <Users className="h-8 w-8 text-red-500" />,
-              title: "Reconhecimento Facial",
-              description: "Entrada rápida e segura com tecnologia biométrica integrada para moradores e visitantes autorizados."
-            },
-            {
-              icon: <Shield className="h-8 w-8 text-red-500" />,
-              title: "Portaria Monitorada",
-              description: "Segurança reforçada com equipe de vigilância e controle remoto para eventos e situações especiais."
-            },
-            {
-              icon: <Phone className="h-8 w-8 text-red-500" />,
-              title: "Aplicativo Mobile",
-              description: "Acesso e notificações na palma da mão para moradores, síndicos e administradores do condomínio."
-            },
-            {
-              icon: <Gift className="h-8 w-8 text-red-500" />,
-              title: "Armários Inteligentes",
-              description: "Entrega segura de encomendas com armários automatizados para maior comodidade e controle."
-            },
-            {
-              icon: <Home className="h-8 w-8 text-red-500" />,
-              title: "Soluções Personalizadas",
-              description: "Sistemas específicos para condomínios horizontais, comerciais e áreas comuns integradas."
-            }
-          ].map((service, index) => (
-            <div key={index} className="bg-stone-50 p-8 rounded-xl hover:shadow-lg transition-shadow duration-300 border border-stone-200">
-              <div className="text-red-500 mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold text-stone-900 mb-3">{service.title}</h3>
-              <p className="text-stone-600 leading-relaxed">{service.description}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
 
 
       {/* How It Works Section */}
@@ -207,7 +201,7 @@ function App() {
               Implantação simples, controle inteligente e operação segura — tudo em poucos passos.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-3 gap-12">
             {[
               {
@@ -238,7 +232,7 @@ function App() {
         </div>
       </section>
 
-            {/* Hero Section */}
+      {/* Hero Section */}
       <section id="regions" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
@@ -261,15 +255,15 @@ function App() {
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
-                      Estamos localizados na Zona Leste de São Paulo  
+                      Estamos localizados na Zona Leste de São Paulo
                     </h2>
                   </div>
-                  <div className="flex items-center">     
+                  <div className="flex items-center">
                     <h2 className="text-3xl lg:text-2xl font-bold text-stone-900 mb-4">
                       Atendemos regiões:
                     </h2>
                   </div>
-                  <div className="flex items-center">     
+                  <div className="flex items-center">
                     <div className="list-disc list-inside text-stone-900 space-y-1">
                       <li>Itaquera</li>
                       <li>Parque do Carmo</li>
@@ -287,7 +281,7 @@ function App() {
       </section>
 
 
-      {/* Benefits Section */} 
+      {/* Benefits Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
@@ -323,7 +317,7 @@ function App() {
                 ))}
               </div>
             </div>
-            
+
             <div className="mt-12 lg:mt-0">
               <div className="bg-stone-50 rounded-2xl p-8 border border-stone-200">
                 <div className="flex items-center mb-6">
@@ -334,11 +328,11 @@ function App() {
                   </div>
                   <span className="ml-2 text-stone-600 font-medium">Satisfação 4.9/5 entre os condomínios atendidos</span>
                 </div>
-                
+
                 <blockquote className="text-stone-700 text-lg leading-relaxed mb-6">
                   "Desde que migramos para a portaria remota da Atende, tivemos mais segurança, agilidade e uma economia real nas despesas mensais do condomínio."
                 </blockquote>
-                
+
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-stone-300 rounded-full flex items-center justify-center">
                     <Users className="h-6 w-6 text-stone-600" />
