@@ -27,7 +27,7 @@ function App() {
             <div className="flex items-center space-x-2">
               {/* <Shield className="h-8 w-8 text-stone-700" /> */}
               <a href="#home">
-                <img src="/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
+                <img src="/src/images/logo.png" alt="Logo Concierge Pro" className="h-25 w-25 object-contain" />
               </a>
               {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
@@ -55,17 +55,19 @@ function App() {
       Nossos sistemas identificam visitantes em tempo real, gravam todas as entradas e saídas em nuvem e ainda oferecem suporte técnico 24 horas por dia. Tudo isso sem obras complexas e com implantação rápida.
     </p>
 
-    <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center">
-      Solicite um Orçamento
-      <ArrowRight className="ml-2 h-5 w-5" />
-    </button>
+    <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0">
+      <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center">
+        Solicite um Orçamento
+        <ArrowRight className="ml-2 h-5 w-5" />
+      </button>
+    </a>
   </div>
 
   {/* Imagem à direita com gradiente customizado */}
   <div className="absolute right-0 top-0 w-full md:w-1/2 h-full">
     <div className="w-full h-full relative">
       <img
-        src="/images/back.png"
+        src="/src/images/back.png"
         alt="Portaria remota"
         className="object-cover w-full h-full"
       />
@@ -113,7 +115,7 @@ function App() {
               </div>
             </div>
             <div className="mb-12 lg:mb-0">
-              <img src="/images/500.png" alt="" />
+              <img src="/src/images/500.png" alt="" />
               {/* <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
                 Um novo jeito
                 <span className="text-stone-700 block">de fazer portaria</span>
@@ -241,7 +243,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
-              <img src="/images/cortado.png" alt="" />
+              <img src="/src/images/cortado.png" alt="" />
               {/* 
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
@@ -268,14 +270,14 @@ function App() {
                     </h2>
                   </div>
                   <div className="flex items-center">     
-                    <ul className="list-disc list-inside text-stone-900 space-y-1">
+                    <div className="list-disc list-inside text-stone-900 space-y-1">
                       <li>Itaquera</li>
                       <li>Parque do Carmo</li>
                       <li>Ponte Rasa</li>
                       <li>Vila Carmosina</li>
                       <li>José Bonifácio</li>
                       <li>E regiões vizinhas</li>
-                    </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -343,7 +345,7 @@ function App() {
                   </div>
                   <div className="ml-4">
                     <div className="font-semibold text-stone-900">Carlos A.</div>
-                    <div className="text-stone-600">Síndico Profissional</div>
+                    <div className="text-stone-600">Síndico</div>
                   </div>
                 </div>
               </div>
@@ -389,10 +391,12 @@ function App() {
           </div>
 
           <div className="text-center">
-            <button className="bg-white text-stone-900 px-8 py-4 rounded-lg font-semibold hover:bg-stone-100 transition-colors duration-200 inline-flex items-center group">
-              Solicite um Orçamento
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-            </button>
+            <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0">
+              <button className="bg-white text-stone-900 px-8 py-4 rounded-lg font-semibold hover:bg-stone-100 transition-colors duration-200 inline-flex items-center group">
+                Solicite um Orçamento
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+              </button>
+            </a>
           </div>
         </div>
       </section>
