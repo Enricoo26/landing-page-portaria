@@ -119,25 +119,6 @@ function App() {
             </div>
             <div className="mb-12 lg:mb-0 flex justify-center mt-12">
               <img src="/images/500.png" alt="Mais de 500 mil usuários" />
-              {/* <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
-                Um novo jeito
-                <span className="text-stone-700 block">de fazer portaria</span>
-              </h1>
-              <p className="text-xl text-stone-600 mb-8 leading-relaxed">
-                Segurança, tecnologia e agilidade para seu condomínio com portaria remota 24h, reconhecimento facial, 
-                controle inteligente de acessos e redução de custos operacionais.
-              </p> */}
-              {/* 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
-                  Saiba Mais
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
-                <button className="border-2 border-stone-300 text-stone-700 px-8 py-4 rounded-lg font-semibold hover:border-stone-400 hover:bg-stone-100 transition-all duration-200">
-                  Fale Conosco
-                </button>
-              </div> 
-              */}
             </div>
           </div>
         </div>
@@ -199,7 +180,7 @@ function App() {
       </section>
 
 
-      {/* How It Works Section */}
+      {/* Section Como Funciona */}
       <section id="como-funciona" className="py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -241,23 +222,12 @@ function App() {
         </div>
       </section>
 
-      {/* Hero Section */}
+      {/* Section Hero  */}
       <section id="regioes" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
               <img src="/images/mobile.png" alt="Serviço mobile e prêmios" />
-              {/* 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center group">
-                  Saiba Mais
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
-                </button>
-                <button className="border-2 border-stone-300 text-stone-700 px-8 py-4 rounded-lg font-semibold hover:border-stone-400 hover:bg-stone-100 transition-all duration-200">
-                  Fale Conosco
-                </button>
-              </div> 
-              */}
             </div>
             <div className="lg:pl-12">
               <div className="bg-white rounded-2xl shadow-xl p-8 border border-stone-200">
@@ -290,7 +260,7 @@ function App() {
       </section>
 
 
-      {/* Benefits Section */}
+      {/* Section Benefits */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
@@ -358,7 +328,7 @@ function App() {
       </section>
 
 
-      {/* contato Section */}
+      {/* Section Contato */}
       <section id="contato" className="py-20 bg-stone-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
