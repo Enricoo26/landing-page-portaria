@@ -106,7 +106,7 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="mb-12 lg:mb-0">
+            <div className="mb-12 lg:mb-0 flex justify-center mt-12">
               <img src="/images/500.png" alt="" />
               {/* <h1 className="text-4xl lg:text-6xl font-bold text-stone-900 leading-tight mb-6">
                 Um novo jeito
