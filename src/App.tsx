@@ -32,10 +32,10 @@ function App() {
               {/* <span className="text-2xl font-bold text-stone-900">Atende Portaria</span> */}
             </div>
             <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-8">
-              <a href="#services" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Serviços</a>
-              <a href="#how-it-works" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Como Funciona</a>
-              <a href="#regions" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Regiões</a>
-              <a href="#contact" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Contato</a>
+              <a href="#servicos" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Serviços</a>
+              <a href="#como-funciona" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Como Funciona</a>
+              <a href="#regioes" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Regiões</a>
+              <a href="#contato" className="text-stone-600 hover:text-stone-900 transition-colors duration-200">Contato</a>
             </nav>
             <div className="w-24" /> {/* ou um botão */}
           </div>
@@ -132,8 +132,8 @@ function App() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 bg-white">
+      {/* servicos Section */}
+      <section id="servicos" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
@@ -189,7 +189,7 @@ function App() {
 
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-20 bg-stone-50">
+      <section id="como-funciona" className="py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
@@ -231,7 +231,7 @@ function App() {
       </section>
 
       {/* Hero Section */}
-      <section id="regions" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
+      <section id="regioes" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
@@ -347,8 +347,8 @@ function App() {
       </section>
 
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-stone-900 text-white">
+      {/* contato Section */}
+      <section id="contato" className="py-20 bg-stone-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
