@@ -14,7 +14,8 @@ import {
   Car,
   Utensils,
   Gift,
-  ArrowRight
+  ArrowRight,
+  Instagram
 } from 'lucide-react';
 
 function App() {
@@ -48,6 +49,9 @@ function App() {
             </nav>
 
             <div className="w-24" />
+            <a href="https://www.instagram.com/atendeportaria_itaquera/">
+              <Instagram></Instagram>
+            </a>
           </div>
         </div>
       </header>
@@ -181,7 +185,7 @@ function App() {
 
 
       {/* Section Como Funciona */}
-      <section id="como-funciona" className="py-20 bg-stone-50">
+      <section id="como-funciona" className="py-10 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
@@ -223,11 +227,11 @@ function App() {
       </section>
 
       {/* Section Hero  */}
-      <section id="regioes" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
+      <section id="regioes" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-1">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="mb-12 lg:mb-0">
-              <img src="/images/mobile.png" alt="Serviço mobile e prêmios" />
+              <img src="/images/Folder_Verso Itaquera 10X15-1.png" alt="Serviço mobile e prêmios" />
             </div>
             <div className="lg:pl-12">
               <div className="bg-white rounded-2xl shadow-xl p-8 border border-stone-200">
@@ -385,10 +389,10 @@ function App() {
             </div>
             <div className="text-sm text-center md:text-right space-x-2">
               <span>© {new Date().getFullYear()} Atende Portaria. Todos os direitos reservados.</span>
-              <span className="hidden sm:inline">|</span>
+              {/* <span className="hidden sm:inline">|</span>
               <a href="/politica-de-privacidade.html" className="underline hover:text-white">Política de Privacidade</a>
               <span className="hidden sm:inline">|</span>
-              <a href="/termos-de-uso.html" className="underline hover:text-white">Termos de Uso</a>
+              <a href="/termos-de-uso.html" className="underline hover:text-white">Termos de Uso</a> */}
             </div>
           </div>
         </div>
