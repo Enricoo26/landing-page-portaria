@@ -70,7 +70,7 @@ function App() {
             Nossos sistemas identificam visitantes em tempo real, gravam todas as entradas e saídas em nuvem e ainda oferecem suporte técnico 24 horas por dia. Tudo isso sem obras complexas e com implantação rápida.
           </p>
 
-          <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0" className="inline-block">
+          <a href="/formulario.html" className="inline-block">
             <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center md:justify-start">
               Solicite um Orçamento
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -368,7 +368,7 @@ function App() {
           </div>
 
           <div className="text-center">
-            <a href="https://api.whatsapp.com/send/?phone=5511942277979&text&type=phone_number&app_absent=0">
+            <a href="/formulario.html">
               <button className="bg-white text-stone-900 px-8 py-4 rounded-lg font-semibold hover:bg-stone-100 transition-colors duration-200 inline-flex items-center group">
                 Solicite um Orçamento
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
