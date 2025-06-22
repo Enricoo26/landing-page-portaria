@@ -96,7 +96,7 @@ function App() {
       </section>
 
       {/* Hero Section */}
-      <section id="hero" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-32">
+      <section id="hero" className="relative bg-gradient-to-br from-stone-100 via-stone-50 to-red-50 py-20 lg:py-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
             <div className="lg:pl-12">
@@ -129,7 +129,7 @@ function App() {
       </section>
 
       {/* servicos Section */}
-      <section id="servicos" className="py-20 bg-white">
+      <section id="servicos" className="py-10 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
@@ -185,7 +185,7 @@ function App() {
 
 
       {/* Section Como Funciona */}
-      <section id="como-funciona" className="py-10 bg-stone-50">
+      <section id="como-funciona" className="py-20 bg-stone-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-stone-900 mb-4">
