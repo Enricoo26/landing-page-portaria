@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import {
   Clock,
   Shield,
@@ -15,10 +15,33 @@ import {
   Utensils,
   Gift,
   ArrowRight,
-  Instagram
-} from 'lucide-react';
+  Instagram,
+} from "lucide-react";
 
 function App() {
+  const [telefone, setTelefone] = useState("");
+  const [cnpj, setCnpj] = useState("");
+
+  const handleTelefoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value = e.target.value.replace(/\D/g, "");
+    if (value.length > 11) value = value.slice(0, 11);
+    if (value.length <= 10) {
+      value = value.replace(/^(\d{2})(\d{4})(\d{0,4})$/, "($1) $2-$3");
+    } else {
+      value = value.replace(/^(\d{2})(\d{5})(\d{0,4})$/, "($1) $2-$3");
+    }
+    setTelefone(value.trim());
+  };
+
+  const handleCnpjChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value = e.target.value.replace(/\D/g, "");
+    if (value.length > 14) value = value.slice(0, 14);
+    value = value.replace(/^(\d{2})(\d)/, "$1.$2");
+    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+    value = value.replace(/\.(\d{3})(\d)/, ".$1/$2");
+    value = value.replace(/(\d{4})(\d)/, "$1-$2");
+    setCnpj(value.trim());
+  };
   return (
     <div className="min-h-screen bg-stone-50">
       {/* Header */}
@@ -70,7 +93,7 @@ function App() {
             Nossos sistemas identificam visitantes em tempo real, gravam todas as entradas e saídas em nuvem e ainda oferecem suporte técnico 24 horas por dia. Tudo isso sem obras complexas e com implantação rápida.
           </p>
 
-          <a href="/formulario.html" className="inline-block">
+          <a href="#contato" className="inline-block">
             <button className="bg-stone-900 text-white px-8 py-4 rounded-lg font-semibold hover:bg-stone-800 transition-colors duration-200 flex items-center justify-center md:justify-start">
               Solicite um Orçamento
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -367,13 +390,109 @@ function App() {
             </div>
           </div>
 
-          <div className="text-center">
-            <a href="/formulario.html">
-              <button className="bg-white text-stone-900 px-8 py-4 rounded-lg font-semibold hover:bg-stone-100 transition-colors duration-200 inline-flex items-center group">
-                Solicite um Orçamento
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+          <div className= "bg-stone-500 rounded-xl p-8 text-left text-stone-900 max-w-3xl mx-auto">
+            <h3 className="text-2xl font-bold text-center text-stone-900 mb-6">
+              Solicite um Orçamento
+            </h3>
+            <form
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              action="/sucesso.html"
+            >
+              <div className="mb-4">
+                <label className="font-bold text-stone">Nome</label>
+                <input
+                  id="name"
+                  name="name"
+                  required
+                  pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]{3,}"
+                  title="Informe seu nome corretamente (mín. 3 letras)"
+                  placeholder="Ex.: João da Silva"
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="font-bold text-stone">E‑mail</label>
+                <input
+                  id="email"
+                  name="email"
+                  required
+                  type="email"
+                  title="Informe um e‑mail válido"
+                  placeholder="Ex.: email@dominio.com"
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="font-bold text-stone">Telefone</label>
+                <input
+                  id="telefone"
+                  name="telefone"
+                  required
+                  maxLength={15}
+                  value={telefone}
+                  onChange={handleTelefoneChange}
+                  title="Informe um telefone válido (Ex.: 11 98765-4321)"
+                  placeholder="Ex.: 11 98765-4321"
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="font-bold text-stone">Nome do Condomínio</label>
+                <input
+                  id="condominio"
+                  name="condominio"
+                  required
+                  title="Informe o nome do condomínio corretamente"
+                  placeholder="Ex.: Residencial Sol Nascente"
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="font-bold text-stone">CNPJ</label>
+                <input
+                  id="cnpj"
+                  name="cnpj"
+                  required
+                  maxLength={18}
+                  value={cnpj}
+                  onChange={handleCnpjChange}
+                  title="Informe um CNPJ válido (Ex.: 12.345.678/0001-99)"
+                  placeholder="Ex.: 12.345.678/0001-99"
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                />
+              </div>
+
+              <div className="mb-4">
+                <label className="font-bold text-stone">Relação com o condomínio</label>
+                <select
+                  id="relacao"
+                  name="relacao"
+                  required
+                  className="w-full mt-1 p-2 rounded border border-gray-300"
+                >
+                  <option value="">Selecione uma opção</option>
+                  <option value="sindico-organico">Síndico Orgânico</option>
+                  <option value="sindico-profissional">Síndico Profissional</option>
+                  <option value="membro-do-comite">Membro do Comitê</option>
+                  <option value="morador">Morador</option>
+                  <option value="zelador">Zelador</option>
+                  <option value="outra-opcao">Outra Opção</option>
+                </select>
+              </div>
+
+              <button
+                type="submit"
+                className="w-full py-3 rounded font-bold text-white bg-stone-900 hover:bg-stone-100 transition-colors hover:text-stone-900"
+              >
+                Enviar
               </button>
-            </a>
+            </form>
           </div>
         </div>
       </section>
