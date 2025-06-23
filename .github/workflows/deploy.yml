@@ -13,4 +13,4 @@ jobs:
         host: ${{ vars.HOST }} 
         user: ${{ vars.USER }}
         password: ${{ vars.PASS }}
-        localDir: "dist"
+        localDir: "public"
