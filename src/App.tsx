@@ -398,7 +398,7 @@ function App() {
               name="contact"
               method="POST"
               data-netlify="true"
-              action="/pages/sucesso.html"
+              action="/sucesso.html"
             >
               <div className="mb-4">
                 <label className="font-bold text-stone">Nome</label>
@@ -485,7 +485,6 @@ function App() {
                   <option value="outra-opcao">Outra Opção</option>
                 </select>
               </div>
-
               <button
                 type="submit"
                 className="w-full py-3 rounded font-bold text-white bg-stone-900 hover:bg-stone-100 transition-colors hover:text-stone-900"
