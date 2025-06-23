@@ -1,16 +1,36 @@
-name: Deploy via ftp
-on: push
+name: Deploy via FTP (Locaweb)
+
+on:
+  push:
+    branches:
+      - main # Altere para a branch desejada
 jobs:
   deploy:
-    name: Deploy
+    name: Build e Deploy
     runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
 
-    - name: FTP Deploy Locaweb
-      uses: locaweb/ftp-deploy@1.0.0
-      with:
-        host: ${{ vars.HOST }} 
-        user: ${{ vars.USER }}
-        password: ${{ vars.PASS }}
-        localDir: "public"
+    steps:
+      # 1️⃣ Checkout do repositório
+      - uses: actions/checkout@v3
+
+      # 2️⃣ Instalar dependências
+      - name: Instalar dependências
+        run: npm install
+
+      # 3️⃣ Build do site
+      - name: Build do site
+        run: npx vite build
+
+      # 4️⃣ Verificar arquivos em dist
+      - name: Listar arquivos do build
+        run: ls -la dist
+
+      # 5️⃣ Deploy para Locaweb
+      - name: FTP Deploy Locaweb
+        uses: locaweb/ftp-deploy@1.0.0
+        with:
+          host: ${{ vars.HOST }}
+          user: ${{ vars.USER }}
+          password: ${{ vars.PASS }}
+          localDir: "dist"
+          remoteDir: "public_html"
