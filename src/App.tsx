@@ -390,7 +390,7 @@ function App() {
             </div>
           </div>
 
-          <div className= "bg-stone-500 rounded-xl p-8 text-left text-stone-900 max-w-3xl mx-auto">
+          <div className="bg-stone-500 rounded-xl p-8 text-left text-stone-900 max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold text-center text-stone-900 mb-6">
               Solicite um Orçamento
             </h3>
@@ -398,7 +398,7 @@ function App() {
               name="contact"
               method="POST"
               data-netlify="true"
-              action="/sucesso.html"
+              action="/pages/sucesso.html"
             >
               <div className="mb-4">
                 <label className="font-bold text-stone">Nome</label>
